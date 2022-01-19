@@ -7,8 +7,9 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-Button btn;
-int num = 0 ;
+    Button btn;
+    int num = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,13 +18,14 @@ int num = 0 ;
 
     }
 
-    public void go(View view){
-        num ++;
-        if (num ==7){
-            if (num % 7 == 0){
+    public void go(View view) {
+        num++;
+        if (num == 7) {
+            if (num % 7 == 0) {
                 btn.setText("BOOM !\n");
-        if(num<7){
-                btn.setText("This is a click number:\n"+num);
+                if (num < 7) {
+                    btn.setText("This is a click number:\n" + num);
+                }
             }
         }
     }
