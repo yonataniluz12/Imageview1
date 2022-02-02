@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             if (num % 7 == 0) {
                 btn.setText("BOOM !\n");
                 if (num < 7) {
-                    btn.setText("This is a click number:\n" + num);
+                    btn.setText("This is a click number:" + num);
                 }
             }
         }
